@@ -1,0 +1,14 @@
+﻿@* breadcrumb starts *@
+<div class="flex">
+	<div class="flex-1 text-grey">
+		<span>Contacts</span>
+		<i class="fa fa-solid fa-caret-right"></i>
+		<span>@ViewBag.ControllerName</span>
+		@if (!string.Equals(ViewBag.PageName, "Index", StringComparison.OrdinalIgnoreCase))
+		{
+			<i class="fa fa-solid fa-caret-right"></i>
+			<span class="text-grey">@ViewBag.PageName</span>
+		}
+	</div>
+</div>
+@* breadcrumbs ends *@
